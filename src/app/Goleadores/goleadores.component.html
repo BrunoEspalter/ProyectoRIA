@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <h2>Tabla de goleadores</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Posición</th>
+        <th>Jugador</th>
+        <th>Equipo</th>
+        <th>Goles</th>
+        <th>Asistencias</th>
+        <th>Goles de Penal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of goleadores">
+        <td>{{ player.player_place }}</td>
+        <td>{{ player.player_name }}</td>
+        <td>{{ player.team_name }}</td>
+        <td>{{ player.goals }}</td>
+        <td>{{ player.assists }}</td>
+        <td>{{ player.penalty_goals }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

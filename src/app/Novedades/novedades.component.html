@@ -1,0 +1,17 @@
+<div class="container mt-5">
+  <h2>Novedades</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let noticia of noticias">
+      <div class="card mb-3">
+        <img [src]="noticia.thumbnail" class="card-img-top" alt="{{ noticia.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ noticia.title }}</h5>
+          <p class="card-text"><strong>Competición:</strong> {{ noticia.competition }}</p>
+          <p class="card-text"><strong>Fecha:</strong> {{ noticia.date | date:'medium' }}</p>
+          <a [href]="noticia.matchviewUrl" target="_blank" class="btn btn-primary">Ver Partido</a>
+          <a [href]="noticia.competitionUrl" target="_blank" class="btn btn-secondary">Ver Competición</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

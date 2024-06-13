@@ -1,0 +1,19 @@
+<h3>Ligas</h3>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let league of leagues">
+      <div class="card h-100">
+        <img src="{{ league.league_logo }}" class="card-img-top" alt="..." width="50" height="250">
+        <div class="card-body">
+          <h5 class="card-title">{{ league.league_name }}</h5>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="button" class="btn btn-success" [routerLink]="['/clasificacion',league.league_key]">Clasificación</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<ng-template #noLeagues>
+  <h1>No hay ligas disponibles</h1>
+</ng-template>
