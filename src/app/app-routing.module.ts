@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'ligas', component: LigasComponent },
   { path: 'Trivia', component: TriviaComponent },
   { path: 'clasificacion/:id', component: TablaComponent },
-  { path: 'goleadores/:id', component: GoleadoresComponent },
+  { path: 'goleadores', component: GoleadoresComponent },
   { path: 'fixture/:id', component: FixtureComponent },
 ];
 
