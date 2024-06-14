@@ -38,7 +38,7 @@ Al realizar estos pasos, automáticamente se abrira una pestaña en el navegador
 
 
 ## Mapa de navegación 
-![Mapa](https://github.com/BrunoEspalter/ProyectoRIA/assets/81487084/cafb3fec-2da7-4953-932e-f757fd04b438)
+![Mapa (1)](https://github.com/BrunoEspalter/ProyectoRIA/assets/81487084/46528805-86f2-4708-a573-d1746166d47c)
 
 ## Servicios REST
 Se eligió como temática una app de futbol, la cual brindara una serie de listados con diferentes temáticas y una trivia a modo de juego para el usuario. Entre los diversos servicios que investigamos, se destaca la Api de BeSoccer. Una API muy completa y bien documentada incluso en niveles de complejidad de las llamadas. Sin embargo optamos por otras APIs las cuales son ScoreBat y AllSportsAPI. Esta última si bien es de muchos deportes, también incluye futbol y ambas son accesibles en cuanto a planes gratuitos  y accesibilidad, algo que la mayoría de las demás APIs no resultaron ser.
