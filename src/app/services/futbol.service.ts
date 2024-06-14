@@ -19,8 +19,8 @@ export class FutbolService {
 
   public obtenerPartidosTrivia(): Observable<any[]> {
 
-    const primerEquipoId = this.getRandomNumber(72, 98);
-    const segundoEquipoId = this.getRandomNumber(72, 98);
+    const primerEquipoId = this.getRandomNumber(72, 97);
+    const segundoEquipoId = this.getRandomNumber(72, 97);
 
     return this.http.get<any[]>(this.apiUrl+'H2H&'+this.apiKey+`firstTeamId=${primerEquipoId}&`+`secondTeamId=${segundoEquipoId}&`);
   }

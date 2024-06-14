@@ -40,7 +40,7 @@ export class TriviaComponent {
   enviarResultado(){
     this.resultado=`${this.homeRes} - ${this.awayRes}`
 
-    if(this.resultado==this.partidos[0].result.H2H[0].event_final_result){
+    if(this.resultado==this.partidos[0].result.firstTeamResults[0].event_final_result){
       this.correcto=true
       this.incorrecto=false
     }else{

@@ -11,18 +11,18 @@
         
         <!-- Fila con la fecha -->
         <tr>
-          <td colspan="2">{{ partidos[0].result.H2H[0].event_date }}</td>
+          <td colspan="2">{{ partidos[0].result.firstTeamResults[0].event_date }}</td>
         </tr>
         
         <!-- Fila con el título de la competición -->
         <tr>
-          <td colspan="2">{{ partidos[0].result.H2H[0].league_name }}</td>
+          <td colspan="2">{{ partidos[0].result.firstTeamResults[0].league_name }}</td>
         </tr>
         
         <!-- Fila con las imágenes de los escudos de los equipos -->
         <tr>
-          <td><img src="{{partidos[0].result.H2H[0].home_team_logo}}" alt="Escudo Equipo 1"></td>
-          <td><img src="{{partidos[0].result.H2H[0].away_team_logo}}" alt="Escudo Equipo 2"></td>
+          <td><img src="{{partidos[0].result.firstTeamResults[0].home_team_logo}}" alt="Escudo Equipo 1"></td>
+          <td><img src="{{partidos[0].result.firstTeamResults[0].away_team_logo}}" alt="Escudo Equipo 2"></td>
         </tr>
         
         <!-- Fila con los inputs para ingresar números -->
