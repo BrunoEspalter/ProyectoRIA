@@ -1,1 +1,36 @@
 /* AppComponent's private CSS styles */
+.nav{
+    justify-content: left;
+    text-align: center;
+    background-color: greenyellow;
+}
+.nav-item{
+    margin: 20px;
+    padding: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: green;
+    border-radius: 5px;
+}
+.nav-item:hover{
+    margin: 20px;
+    padding: 8px;
+    background-color: rgb(63, 219, 63);
+    transform: scale(1.05);
+    box-shadow: 10px 10px 5px green;
+    border-radius: 5px;
+}
+.title{
+    font-size: 52px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: green;
+}
+.title:hover{
+    font-size: 52px;
+    background-color: rgb(63, 219, 63);
+    transform: scale(1.05);
+    box-shadow: 10px 10px 5px green;
+}
+
+.subtitle{
+    font-size: 40px;
+}

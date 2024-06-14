@@ -1,0 +1,10 @@
+.card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 15px green;
+    transform: scale(1.05);
+    cursor: pointer;
+}
