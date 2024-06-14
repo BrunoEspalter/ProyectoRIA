@@ -1,0 +1,47 @@
+<div *ngIf="partidos.length === 0; else triviaContent">
+    <button (click)="solicitarTrivia()">Empezar Trivia</button>
+  </div>
+  
+  <ng-template #triviaContent>
+    <table>
+        <!-- Fila con el título "ADIVINA EL RESULTADO" -->
+        <tr>
+          <th colspan="2">ADIVINA EL RESULTADO</th>
+        </tr>
+        
+        <!-- Fila con la fecha -->
+        <tr>
+          <td colspan="2">{{ partidos[0].result.firstTeamResults[0].event_date }}</td>
+        </tr>
+        
+        <!-- Fila con el título de la competición -->
+        <tr>
+          <td colspan="2">{{ partidos[0].result.firstTeamResults[0].league_name }}</td>
+        </tr>
+        
+        <!-- Fila con las imágenes de los escudos de los equipos -->
+        <tr>
+          <td><img src="{{partidos[0].result.firstTeamResults[0].home_team_logo}}" alt="Escudo Equipo 1"></td>
+          <td><img src="{{partidos[0].result.firstTeamResults[0].away_team_logo}}" alt="Escudo Equipo 2"></td>
+        </tr>
+        
+        <!-- Fila con los inputs para ingresar números -->
+        <tr>
+          <td><input type="number" placeholder="0" [(ngModel)]="homeRes"></td>
+          <td><input type="number" placeholder="0" [(ngModel)]="awayRes"></td>
+        </tr>
+      </table>
+  </ng-template>
+  <div *ngIf="partidos.length != 0 && !resultado" >
+    <button (click)="enviarResultado()">Probar Suerte</button>
+  </div>
+  <div *ngIf="partidos.length != 0 && correcto" >
+    <div>CORRECTO!</div>
+    <button (click)="solicitarTrivia()">Jugar de nuevo</button>
+  </div>
+  <div *ngIf="partidos.length != 0 && incorrecto" >
+    <div>INCORRECTO!</div>
+    <button (click)="enviarResultado()">Intentar otra vez</button>
+    <button (click)="solicitarTrivia()">Buscar otra trivia</button>
+  </div>
+

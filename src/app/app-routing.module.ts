@@ -6,13 +6,15 @@ import { TablaComponent } from './Tabla/tabla.component';
 import { GoleadoresComponent } from './Goleadores/goleadores.component';
 import { NovedadesComponent } from './Novedades/novedades.component';
 import { FixtureComponent } from './Fixture/fixture.component';
+import { TriviaComponent } from './trivia/trivia.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/novedades', pathMatch: 'full' },
   { path: 'novedades', component: NovedadesComponent },
   { path: 'ligas', component: LigasComponent },
+  { path: 'Trivia', component: TriviaComponent },
   { path: 'clasificacion/:id', component: TablaComponent },
-  { path: 'goleadores/:id', component: GoleadoresComponent },
+  { path: 'goleadores', component: GoleadoresComponent },
   { path: 'fixture/:id', component: FixtureComponent },
 ];
 
