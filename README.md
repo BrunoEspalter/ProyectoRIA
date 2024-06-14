@@ -26,8 +26,7 @@ Al realizar estos pasos, automáticamente se abrira una pestaña en el navegador
 ![image](https://github.com/BrunoEspalter/ProyectoRIA/assets/81487084/16740eeb-fd46-42c4-ad29-3f64ff4ad258)
 ![image](https://github.com/BrunoEspalter/ProyectoRIA/assets/81487084/03dc4b68-cb46-4198-8198-421f75a52450)
 ![image](https://github.com/BrunoEspalter/ProyectoRIA/assets/81487084/0583151c-110d-4cdb-bb8f-9743fdec757b)
-![image](https://github.com/BrunoEspalter/ProyectoRIA/assets/81487084/eae49887-0819-487f-8b3b-bb412e599ae1)
-
+![image](https://github.com/BrunoEspalter/ProyectoRIA/assets/81487084/df2a9391-296e-436e-963c-9dc0a5ab7950)
 
 ## Mock ups 
 ![image](https://github.com/BrunoEspalter/ProyectoRIA/assets/81487084/976b07cb-2d8f-4999-bfad-6a54cdc67e23)
