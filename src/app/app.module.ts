@@ -13,6 +13,7 @@ import { TablaComponent } from './Tabla/tabla.component';
 import { GoleadoresComponent } from './Goleadores/goleadores.component';
 import { NovedadesComponent } from './Novedades/novedades.component';
 import { FixtureComponent } from './Fixture/fixture.component';
+import { TriviaComponent } from './trivia/trivia.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { FixtureComponent } from './Fixture/fixture.component';
     GoleadoresComponent,
     NovedadesComponent,
     FixtureComponent,
+    TriviaComponent,
   ],
   bootstrap: [ AppComponent ]
 })
